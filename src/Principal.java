@@ -23,7 +23,7 @@ public class Principal {
             System.out.println("Ronda: "+contador);
             //Daño humano a alien
             if(escenario.devolverPrimerAlienVivo() != null){
-                escenario.devolverPrimerAlienVivo().recibirDanyo(escenario.devolverPrimerHumanoVivo().golpe;
+                escenario.devolverPrimerAlienVivo().recibirDanyo(escenario.devolverPrimerHumanoVivo().golpe);
             }
             //Daño alien a humano
             if (escenario.devolverPrimerHumanoVivo() != null){
