@@ -13,6 +13,10 @@ public class Pokemon implements InterfazPokemon{
     public int defensa=50;
     public boolean vivo = true;
 
+    //variable para comprobar si un pokemon está capturado
+    //En caso de que no esté capturado, está libre
+    public boolean capturado=false;
+
     private int numeroPokemon=0;
 
     public tipoPokemon tipo = tipoPokemon.FUEGO;
@@ -42,8 +46,6 @@ public class Pokemon implements InterfazPokemon{
         this.nombre=nombre;
         this.vidaMaxima=vidaMaxima;
     }
-
-    public Pokemon (int )
 
     public int getVidaActual() {
         return vidaActual;
@@ -140,4 +142,13 @@ public class Pokemon implements InterfazPokemon{
     public void realizarDefensa() {
 
     }
+
+    public boolean estaCapturado(){
+        return this.capturado;
+    }
+
+    public void setCapturado(){
+
+    }
+
 }

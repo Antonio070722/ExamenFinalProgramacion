@@ -7,11 +7,16 @@ import java.nio.channels.Pipe;
 
 public class Principal {
     static void main(String[] args) {
+        Pokeball[] pokeballs = new Pokeball[3];
 
-        Pokemon[] pokemons=new Pokemon[Pokemon.numeroPokemons];
+        for (int i = 0; i < pokeballs.length; i++) {
 
+        }
+        EntrenadorPokemon entrenadorPokemon = new EntrenadorPokemon(pokeBalls, );
+        entrenadorPokemon.setNombre("Curro");
+        PokemonImpl[] pokemons=new PokemonImpl[Pokemon.numeroPokemons];
         for (int i = 0; i < pokemons.length; i++) {
-            pokemons[i]=new Pokemon(i);
+            pokemons[i]= new PokemonImpl(i);
             pokemons[i].setNombre("Pokemon"+i);
 
             int numeroAzar= Utils.pedirNumeroAleatorio(1,4);
